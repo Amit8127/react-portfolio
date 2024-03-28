@@ -8,6 +8,7 @@ import {
   faGithub,
   faInstagram,
   faWhatsapp,
+  faDelicious,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faHome,
@@ -16,7 +17,7 @@ import {
   faSuitcase,
   faBars,
   faClose,
-  faCog,
+  faGears,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 
@@ -27,7 +28,7 @@ const Sidebar = () => {
     <div className="nav-bar">
       <Link className="logo" to="/" onClick={() => setShowNav(false)}>
         <img src={LogoA} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        <img className="sub-logo" src={LogoSubtitle} alt="amit" />
       </Link>
       <nav className={showNav ? "mobile-show" : ""}>
         <NavLink
@@ -49,15 +50,15 @@ const Sidebar = () => {
         <NavLink
           activeclassname="active"
           className="skill-link"
-          to="/skill"
+          to="/skills"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faCog} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faGears} color="#4d4d4e" />
         </NavLink>
         <NavLink
           activeclassname="active"
-          className="portfolio-link"
-          to="/portfolio"
+          className="project-link"
+          to="/project"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />

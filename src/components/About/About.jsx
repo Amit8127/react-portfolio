@@ -36,11 +36,11 @@ const About = () => {
             />
           </h1>
           <p>
-            As a Full Stack Java Developer and DSA geek with, having excellent
-            problem solving skills. I bring a wealth of engineering expertise in
+            As a Software Developer and DSA geek with, having excellent problem
+            solving skills. I bring a wealth of engineering expertise in
             front-end and back-end technologies.
           </p>
-          <p align="LEFT">
+          <p>
             Proficient in Java, Spring, and diverse databases, I specialize in
             crafting scalable and efficient solutions. Dive into my projects to
             see the seamless integration of front-end technologies, showcasing
@@ -52,20 +52,6 @@ const About = () => {
             demonstrate a can-do attitude and embrace tough challenges with
             energy and enthusiasm.
           </p>
-          {/* <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
-          </p>
-          <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
-          </p>
-          <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
-          </p> */}
         </div>
 
         <div className="stage-cube-cont">

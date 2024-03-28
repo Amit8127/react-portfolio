@@ -6,7 +6,7 @@ import Loader from "../Loader/Loader";
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const [portfolio, setPortfolio] = useState(projectData);
+  const [project, setProject] = useState(projectData);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -18,22 +18,14 @@ const Projects = () => {
     };
   });
 
-  useEffect(() => {
-    getPortfolio();
-  }, []);
 
-  const getPortfolio = async () => {
-    const querySnapshot = await getDocs(collection(db, "portfolio"));
-    setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
-  };
-
-  const renderPortfolio = (portfolio) => {
+  const renderProject = (project) => {
     return (
       <div className="images-container">
-        {portfolio.map((port, idx) => {
+        {project.map((port, idx) => {
           return (
             <div className="image-box" key={idx}>
-              <img src={port.img} className="portfolio-image" alt="portfolio" />
+              <img src={port.img} className="project-image" alt="project" />
               <div className="content">
                 <p className="title">{port.title}</p>
                 <h4 className="description">{port.description}</h4>
@@ -51,7 +43,7 @@ const Projects = () => {
   return (
     <>
       <Loader />
-      <div className="container portfolio-page">
+      <div className="container project-page">
         <h1 className="page-title">
           <AnimatedLetters
             letterClass={letterClass}
@@ -59,7 +51,7 @@ const Projects = () => {
             idx={15}
           />
         </h1>
-        <div>{renderPortfolio(portfolio)}</div>
+        <div className="scrollable-section">{renderProject(project)}</div>
       </div>
     </>
   );

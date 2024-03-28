@@ -73,7 +73,7 @@ const Home = () => {
             CONTACT ME
           </Link>
           <Link
-            to="https://drive.google.com/file/d/1r1mbm1yOfVoRxmKLexvYObGHCEo0Ytlh/view?usp=drive_link"
+            to="https://drive.google.com/file/d/1G7mhM5Q25hYaxWIXSviYFu74Dd7636yY/view?usp=sharing"
             className="flat-button"
             target="_blank"
           >

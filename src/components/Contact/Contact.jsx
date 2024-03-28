@@ -4,6 +4,7 @@ import "./Contact.scss";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { Link } from "react-router-dom";
 import Loader from "../Loader/Loader";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");

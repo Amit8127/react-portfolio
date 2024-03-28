@@ -14,6 +14,7 @@
   animation-fill-mode: both;
 
   &:hover {
+    cursor: default;
     animation: heartBeat 1s;
     color: #ffd700;
   }

@@ -40,7 +40,7 @@
 
 .container.contact-page,
 .container.about-page,
-.container.portfolio-page {
+.container.project-page {
   h1 {
     font-size: 53px;
     font-family: "Coolvetica";
@@ -125,7 +125,7 @@
 
     &.contact-page,
     &.about-page,
-    &.portfolio-page {
+    &.project-page {
       .text-zone {
         position: initial;
         transform: none;
@@ -136,7 +136,7 @@
       }
     }
 
-    &.portfolio-page {
+    &.project-page {
       width: 100%;
       padding: 20px;
       box-sizing: border-box;
