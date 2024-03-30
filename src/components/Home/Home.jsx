@@ -68,7 +68,7 @@ const Home = () => {
               idx={17}
             />
           </h1>
-          <h2 style={{fontSize: "16px"}}>Java Full Stack Developer | MARN Stack Developer</h2>
+          <h2 style={{fontSize: "16px"}}>Java Full Stack Developer | MERN Stack Developer</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
