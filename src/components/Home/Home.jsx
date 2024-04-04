@@ -69,7 +69,7 @@ const Home = () => {
             />
           </h1>
           <h2 style={{fontSize: "16px"}}>Java Full Stack Developer | MERN Stack Developer</h2>
-          <Link to="/contact" className="flat-button">
+          <Link to="/contact" className="flat-button con">
             CONTACT ME
           </Link>
           <Link

@@ -4,7 +4,14 @@ import "./Contact.scss";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import { Link } from "react-router-dom";
 import Loader from "../Loader/Loader";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -55,6 +62,7 @@ const Contact = () => {
 
   return (
     <>
+      <Loader />
       <div className="container contact-page">
         <div className="text-zone">
           <h1>
@@ -154,8 +162,48 @@ const Contact = () => {
             </Marker>
           </MapContainer>
         </div>
+        <div className="contact-links">
+          <a
+            href="https://www.linkedin.com/in/amitkumar0000/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              color="#ffd700"
+              className="icon"
+            />
+          </a>
+
+          <a
+            href="https://github.com/Amit8127"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} color="#ffd700" className="icon" />
+          </a>
+
+          <a href="https://wa.me/918127494878" rel="noreferrer" target="_blank">
+            <FontAwesomeIcon
+              icon={faWhatsapp}
+              color="#ffd700"
+              className="icon"
+            />
+          </a>
+
+          <a
+            href="https://www.instagram.com/_with_amit?igsh=aWUyNGJkbWxmNWM3"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FontAwesomeIcon
+              icon={faInstagram}
+              color="#ffd700"
+              className="icon"
+            />
+          </a>
+        </div>
       </div>
-      <Loader/>
     </>
   );
 };

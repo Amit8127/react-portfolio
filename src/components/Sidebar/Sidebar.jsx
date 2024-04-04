@@ -108,7 +108,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://wa.me/qr/KFAYVIPFGAWTO1"
+            href="https://wa.me/918127494878"
             rel="noreferrer"
             target="_blank"
           >
@@ -133,6 +133,7 @@ const Sidebar = () => {
           </a>
         </li>
       </ul>
+      
       <FontAwesomeIcon
         onClick={() => setShowNav(true)}
         icon={faBars}

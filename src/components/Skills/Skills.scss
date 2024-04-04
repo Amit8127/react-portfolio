@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .project-page {
   overflow: hidden;
   width: 90vw;
@@ -70,7 +72,23 @@
         span {
           color: #ffd700;
         }
+
+        @include mobile {
+          font-size: 12px;
+          list-style-type: none;
+          padding: 0;
+        }
       }
+    }
+
+    @include mobile {
+      margin: 0;
+    }
+  }
+
+  @include mobile {
+    .page-title > span {
+      font-size: 40px !important;
     }
   }
 }

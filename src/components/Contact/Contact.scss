@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .contact-form {
   width: 100%;
   margin-top: 20px;
@@ -47,8 +49,9 @@
     outline: #ffd700;
   }
 
-  input[type="text"]:focus ,
-  input[type="email"]:focus, textarea:focus {
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
     border-bottom: 2px solid #ffd700;
   }
 
@@ -94,6 +97,10 @@
   width: 53%;
   height: 115%;
   margin-top: -3%;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .leaflet-container {
@@ -125,17 +132,50 @@
     font-size: 16px;
     color: #ffd700;
   }
-}
-
-@media screen and (max-width: 1200px) {
-  .map-wrap {
-    float: none;
-    margin: 0;
-    width: 100%;
-    height: 400px;
-  }
-
-  .info-map {
+  @include mobile {
     display: none;
   }
 }
+
+.contact-page {
+  .contact-links {
+    display: none;
+
+    a {
+
+      .icon{
+        width: 50px;
+        height: 50px;
+      }
+    }
+    
+    @include mobile {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  h2 {
+    @include mobile {
+      font-size: 15px !important;
+    }
+  }
+  h1 {
+    @include mobile {
+      font-size: 45px !important;
+    }
+  }
+}
+
+// @media screen and (max-width: 1200px) {
+//   .map-wrap {
+//     float: none;
+//     margin: 0;
+//     width: 100%;
+//     height: 400px;
+//   }
+
+//   .info-map {
+//     // display: none;
+//   }
+// }

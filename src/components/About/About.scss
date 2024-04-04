@@ -1,5 +1,11 @@
+@import "../../App.scss";
+
 p {
   font-size: 16px !important;
+
+  @include mobile {
+    font-size: 14px !important;
+  }
 }
 
 .stage-cube-cont {
@@ -11,6 +17,12 @@ p {
   position: absolute;
   right: 0;
   overflow: hidden;
+
+  @include mobile {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
 }
 
 .cubespinner {
@@ -60,6 +72,7 @@ p {
     transform: rotateX(-90deg) translateZ(100px);
     color: #ec4d28;
   }
+
 }
 
 @keyframes spincube {

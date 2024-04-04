@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .home-page {
   .text-zone {
     position: absolute;
@@ -7,11 +9,16 @@
     width: 40%;
     max-height: 90%;
     cursor: context-menu;
+    @include mobile {
+      .con {
+        display: none;
+      }
+    }
   }
 
   h1 {
     color: #fff;
-    font-size: 56px;
+    font-size: 60px;
     line-height: 53px;
     margin: 0;
     font-family: "Coolvetica";
@@ -48,6 +55,11 @@
       animation: rotateIn 0.3s linear both;
       animation-delay: 1.8s;
     }
+
+    @include mobile {
+      text-align: center;
+      font-size: 45px;
+    }
   }
 
   h2 {
@@ -58,6 +70,10 @@
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
+    @include mobile {
+      text-align: center;
+      font-size: 15px !important;
+    }
   }
 
   .flat-button {
@@ -79,6 +95,11 @@
       background: #ffd700;
       color: #333;
     }
+
+    @include mobile {
+      text-align: center;
+      margin: 0;
+    }
   }
 }
 
@@ -89,7 +110,9 @@
   }
   100% {
     opacity: 1;
-    transform: rotate(360deg); /* Rotate 360 degrees for one complete rotation */
+    transform: rotate(
+      360deg
+    ); /* Rotate 360 degrees for one complete rotation */
   }
 }
 
