@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .project-page {
   padding-left: 100px;
   padding-right: 50px;
@@ -113,6 +115,10 @@
     &:hover .content {
       bottom: 0;
       background: transparent;
+    }
+    
+    @include mobile {
+      max-width: 100% !important;
     }
   }
 }
